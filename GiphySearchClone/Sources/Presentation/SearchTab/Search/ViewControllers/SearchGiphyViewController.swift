@@ -56,13 +56,9 @@ class SearchGiphyViewController: UIViewController {
     // MARK: User Actions
     @IBAction func searchButtonDidTap(_ sender: UIButton) {
         searchTextField.resignFirstResponder()
-        let keyWord = searchTextField.text ?? ""
-        let storyBoard: UIStoryboard = UIStoryboard(name: "SearchTab", bundle: nil)
-        guard let searchGiphyViewController = storyBoard.instantiateInitialViewController() as? SearchGiphyViewController else {
-            fatalError("Cannot instantiate initial view controller at \(Self.self) from storyboard")
+        if (searchTextField.text != "") {
+            pushSearchViewController(keyWord: searchTextField.text!)
         }
-        searchGiphyViewController.searchKeyWord = keyWord
-        self.navigationController?.pushViewController(searchGiphyViewController, animated: true)
     }
     
     
@@ -93,12 +89,23 @@ class SearchGiphyViewController: UIViewController {
             }
         }
     }
+    
+    private func pushSearchViewController(keyWord: String) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "SearchTab", bundle: nil)
+        guard let searchGiphyViewController = storyBoard.instantiateInitialViewController() as? SearchGiphyViewController else {
+            fatalError("Cannot instantiate initial view controller at \(Self.self) from storyboard")
+        }
+        searchGiphyViewController.searchKeyWord = keyWord
+        self.navigationController?.pushViewController(searchGiphyViewController, animated: true)
+    }
 }
 
 extension SearchGiphyViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
         searchTextField.resignFirstResponder()
+        if (searchTextField.text != "") {
+            pushSearchViewController(keyWord: searchTextField.text!)
+        }
         return true
     }
 }

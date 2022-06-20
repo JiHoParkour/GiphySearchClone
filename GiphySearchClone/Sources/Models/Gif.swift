@@ -20,7 +20,7 @@ struct Gif: Codable {
     let isSticker: Int
     let importDatetime, trendingDatetime: String
     let images: Images
-    //let user: User
+    let user: User?
     let analyticsResponsePayload: String
     let analytics: Analytics
     
@@ -36,7 +36,8 @@ struct Gif: Codable {
         case isSticker = "is_sticker"
         case importDatetime = "import_datetime"
         case trendingDatetime = "trending_datetime"
-        case images//, user
+        case images
+        case user
         case analyticsResponsePayload = "analytics_response_payload"
         case analytics
     }
@@ -144,28 +145,28 @@ struct Looping: Codable {
 }
 
 // MARK: - User
-//struct User: Codable {
-//    let avatarURL: String
-//    let bannerImage, bannerURL: String
-//    let profileURL: String
-//    let username, displayName, gifDescription: String
-//    let instagramURL: String
-//    let websiteURL: String
-//    let isVerified: Bool
-//
-//    enum CodingKeys: String, CodingKey {
-//        case avatarURL = "avatar_url"
-//        case bannerImage = "banner_image"
-//        case bannerURL = "banner_url"
-//        case profileURL = "profile_url"
-//        case username
-//        case displayName = "display_name"
-//        case gifDescription = "description"
-//        case instagramURL = "instagram_url"
-//        case websiteURL = "website_url"
-//        case isVerified = "is_verified"
-//    }
-//}
+struct User: Codable {
+    let avatarURL: String
+    let bannerImage, bannerURL: String
+    let profileURL: String
+    let username, displayName, gifDescription: String
+    let instagramURL: String
+    let websiteURL: String
+    let isVerified: Bool
+
+    enum CodingKeys: String, CodingKey {
+        case avatarURL = "avatar_url"
+        case bannerImage = "banner_image"
+        case bannerURL = "banner_url"
+        case profileURL = "profile_url"
+        case username
+        case displayName = "display_name"
+        case gifDescription = "description"
+        case instagramURL = "instagram_url"
+        case websiteURL = "website_url"
+        case isVerified = "is_verified"
+    }
+}
 
 // MARK: - Meta
 struct Meta: Codable {

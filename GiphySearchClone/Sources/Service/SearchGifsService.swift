@@ -15,7 +15,7 @@ class SearchGifsService: SearchGifsServiceProtocol {
     func search(keyword: String, offset: Int, completionHandler: @escaping (APIResponse<Any>) -> Void) {
         let url = "https://api.giphy.com/v1/gifs/search"
         let header: HTTPHeaders = ["Content-Type":"application/json"]
-        let parameters: Parameters = ["api_key":"OmpMaLqyA0y3icC2TM7xtvTH1ongOj6l",
+        let parameters: Parameters = ["api_key":Constants.giphyAPIKey,
                                       "q": keyword,
                                       "limit":"20",
                                       "offset":String(offset),
