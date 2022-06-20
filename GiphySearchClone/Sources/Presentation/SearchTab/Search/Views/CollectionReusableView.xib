@@ -18,25 +18,32 @@
                     <rect key="frame" x="0.0" y="0.0" width="483" height="266"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MOA-1B-tJ0">
-                            <rect key="frame" x="30" y="216" width="423" height="40"/>
+                            <rect key="frame" x="20" y="216" width="443" height="40"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fXR-CX-193">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fXR-CX-193">
                                     <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                    <color key="backgroundColor" white="0.18660896975977892" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="fXR-CX-193" secondAttribute="height" id="gPY-Iz-fyR"/>
                                     </constraints>
                                 </imageView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XtF-lH-ca0">
-                                    <rect key="frame" x="50" y="2" width="293" height="36.5"/>
+                                    <rect key="frame" x="50" y="-6.5" width="313" height="53.5"/>
                                     <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XtE-3Z-mcD">
+                                            <rect key="frame" x="0.0" y="0.0" width="313" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rebert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JP-kW-Xdh">
-                                            <rect key="frame" x="0.0" y="0.0" width="293" height="19.5"/>
+                                            <rect key="frame" x="0.0" y="17" width="313" height="19.5"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@robert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAh-IJ-fEG">
-                                            <rect key="frame" x="0.0" y="19.5" width="293" height="17"/>
+                                            <rect key="frame" x="0.0" y="36.5" width="313" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -44,13 +51,13 @@
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MC2-pd-7Q3">
-                                    <rect key="frame" x="343" y="5" width="80" height="30"/>
+                                    <rect key="frame" x="363" y="5" width="80" height="30"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UzK-1F-AAF">
-                                            <rect key="frame" x="0.0" y="1.5" width="30" height="27.5"/>
+                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartEmpty" translatesAutoresizingMaskIntoConstraints="NO" id="UzK-1F-AAF">
+                                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </imageView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperplane.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0NU-zL-5Z2">
+                                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperplane.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0NU-zL-5Z2">
                                             <rect key="frame" x="50" y="0.5" width="30" height="29.5"/>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -77,19 +84,19 @@
                                 <constraint firstAttribute="bottom" secondItem="MC2-pd-7Q3" secondAttribute="bottom" constant="5" id="yX0-Z7-LyX"/>
                             </constraints>
                         </view>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zsL-Ph-yYO">
-                            <rect key="frame" x="30" y="10" width="423" height="196"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zsL-Ph-yYO">
+                            <rect key="frame" x="22" y="10" width="439" height="196"/>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="zsL-Ph-yYO" secondAttribute="trailing" constant="30" id="0C0-O9-3sT"/>
+                        <constraint firstAttribute="trailing" secondItem="zsL-Ph-yYO" secondAttribute="trailing" constant="22" id="0C0-O9-3sT"/>
                         <constraint firstAttribute="bottom" secondItem="MOA-1B-tJ0" secondAttribute="bottom" constant="10" id="3fx-m8-cNA"/>
                         <constraint firstItem="zsL-Ph-yYO" firstAttribute="top" secondItem="1c7-IG-PvU" secondAttribute="top" constant="10" id="CLQ-iB-5Ld"/>
                         <constraint firstItem="MOA-1B-tJ0" firstAttribute="top" secondItem="zsL-Ph-yYO" secondAttribute="bottom" constant="10" id="F5U-kc-Lo6"/>
-                        <constraint firstAttribute="trailing" secondItem="MOA-1B-tJ0" secondAttribute="trailing" constant="30" id="HzI-To-bvX"/>
-                        <constraint firstItem="zsL-Ph-yYO" firstAttribute="leading" secondItem="1c7-IG-PvU" secondAttribute="leading" constant="30" id="gHw-KA-9ac"/>
-                        <constraint firstItem="MOA-1B-tJ0" firstAttribute="leading" secondItem="1c7-IG-PvU" secondAttribute="leading" constant="30" id="mcc-0O-zQ8"/>
+                        <constraint firstAttribute="trailing" secondItem="MOA-1B-tJ0" secondAttribute="trailing" constant="20" id="HzI-To-bvX"/>
+                        <constraint firstItem="zsL-Ph-yYO" firstAttribute="leading" secondItem="1c7-IG-PvU" secondAttribute="leading" constant="22" id="gHw-KA-9ac"/>
+                        <constraint firstItem="MOA-1B-tJ0" firstAttribute="leading" secondItem="1c7-IG-PvU" secondAttribute="leading" constant="20" id="mcc-0O-zQ8"/>
                     </constraints>
                 </view>
             </subviews>
@@ -101,14 +108,18 @@
                 <constraint firstItem="1c7-IG-PvU" firstAttribute="top" secondItem="5FI-b8-K5c" secondAttribute="top" id="P6h-6I-cx6"/>
             </constraints>
             <connections>
+                <outlet property="displayNameLabel" destination="1JP-kW-Xdh" id="fIG-bR-1HD"/>
+                <outlet property="favoriteButtonImageView" destination="UzK-1F-AAF" id="kcs-Cs-5rq"/>
                 <outlet property="gifImageView" destination="zsL-Ph-yYO" id="dXD-dH-5WU"/>
+                <outlet property="sourceLabel" destination="XtE-3Z-mcD" id="5jl-xc-ela"/>
+                <outlet property="userNameLabel" destination="cAh-IJ-fEG" id="Uje-6T-VaF"/>
                 <outlet property="userProfileImageView" destination="fXR-CX-193" id="NIm-la-G8U"/>
             </connections>
             <point key="canvasLocation" x="-83.333333333333343" y="111.83035714285714"/>
         </collectionReusableView>
     </objects>
     <resources>
-        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="heartEmpty" width="97" height="90"/>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
     </resources>
 </document>
